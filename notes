@@ -14,3 +14,127 @@ img maths lhuissier
 http://www.irmo.ie/combinatorics_chessboard.pdf
 http://www.math.bme.hu/~gabor/disease1.pdf
 on voit en dimension 3
+f c0 R^2 -> R, f^-1(x_0) = a => x_0 extremum relatif
+A, B 2 sommets d'un cube: nb de chemins de longueur n de A à B? 
+Chevre Monty Hall
+refraction mvt brownien (marche aléatoire discrete)
+moyenner groupes
+arbres transpositions
+Compter avec groupes
+il existe a b irrationnels a^b rationnel
+Cauchy Schwartz
+Récurrence dimension
+det vandermonde: complexifier probleme
+methode alg lineaire
+utiliser brownien pour marche discrete
+discret <-> continu: intégrale <-> suite, eq diff, dét
+2n+1 cailloux, séparer 2 ens meme taille -> x ens 2 alg, 2 ens taille diff, 3 ensemble: C?
+interpretation:  combi, proba, ineg hadamard, det, physique ineg iso
+analyse synthese: trouver limite suite, ^|
+pivot gauss, decomposition GLn et SLn, mesurable = suite fctns, approximation: utiliser riemann -> intégrale, densité (fct convexe median), f(x+y) = f(x) + f(y)
+interpretation complexe, somme cos k x, somme C^n_3k
+preuve algorithmique: dichotomie, bolzano weierstrass, lemme sperner
+Dessiner: fct convexe, graphe
+approximation: weierstrass pour Poly -> C°, fourier, réel par rationnel, fct escalier, eq diff par son linéarisé...
+dvp asympt de somme f(k/n)
+éq diff implicité, éq suite
+choisir au hasard: enigme 2 nombres, algo 2 SAT, inégalité crossing number
+multiple 13 dont l'écriture décimale d'a que des 1 -> tout en un
+nombre max régions défini par k hyperplans
+induction structurelle
+nadia & vincent booléen
+dét de Gram
+Soit (a,b,c) \in \mathbb{C} tel que |a|=|b|=|c|=1 et a+b+c=1
+Montrer que l'un, au moins, de ces 3 complexes est égal à 1.
+
+
+Montrer qu'il existe une infinité de puissance de 2 qui commence par le chiffre 7. densité
+
+Allez, un facile: soit E un espace vectoriel réel de dimension finie n, f\in L(E), f^2=-Id_E. Montrer que n est pair.
+
+intégrale fonction impaire
+
+faire glisser une droite: ham sandwich
+
+Un exercice assez joli, pas totalement évident mais élémentaire :
+
+Soit E un ensemble de cardinal n et F un ensemble de parties de E avec |F| = 2^{n - 1} tel que pour tous A, B et C dans E, alors A \cap B \cap C est non vide. Montrer que l'intersection de tous les éléments de F est non vide.
+
+Une proposition de démo :
+
+En utilisant le fait que card E = 2^n et card F = 2^n-1 , on montre d'abord que pour toute partie A de E alors exclusivement A ou CA (complémentaire) est élément de F .
+
+on montre ensuite que F contient un singleton :
+Soit p le cardinal minimal des éléments de F , par l'absurde si p > 1 est le cardinal minimal d'un élément de F soit alors A = x1,..,xp un de ces éléments de F de cardinal p ( les xi sont différents 2 à 2)
+comme F contient toutes les parties de n - (p-1) éléments alors on peut facilement construire deux parties B = x1, y1,..., yq ( avec q = n- p et en choisissant les yi dans CA )
+et D = x2 , y1,...,yq
+clairement A inter B inter D = O (vide) ce qui contredit une des propriétés de F , donc p = 1
+Et enfin de p=1 on tire immédiatement que l'intersection des éléments de F est non vide ( ce singleton) 
+int de Gauss, Sperner, Monsky
+proba 2 nb premiers eux
+Formule Euler
+Cauchy Schwartz
+f c0 R^2 -> R, f^-1(x_0) = a => x_0 extremum relatif
+A, B 2 sommets d'un cube: nb de chemins de longueur n de A à B? 
+Chevre Monty Hall
+refraction mvt brownien (marche aléatoire discrete)
+moyenner groupes
+arbres transpositions
+Compter avec groupes
+il existe a b irrationnels a^b rationnel
+Cauchy Schwartz
+Récurrence dimension
+det vandermonde: complexifier probleme
+methode alg lineaire
+utiliser brownien pour marche discrete
+discret <-> continu: intégrale <-> suite, eq diff, dét
+2n+1 cailloux, séparer 2 ens meme taille -> x ens 2 alg, 2 ens taille diff, 3 ensemble: C?
+interpretation:  combi, proba, ineg hadamard, det, physique ineg iso
+analyse synthese: trouver limite suite, ^|
+pivot gauss, decomposition GLn et SLn, mesurable = suite fctns, approximation: utiliser riemann -> intégrale, densité (fct convexe median), f(x+y) = f(x) + f(y)
+interpretation complexe, somme cos k x, somme C^n_3k
+preuve algorithmique: dichotomie, bolzano weierstrass, lemme sperner
+Dessiner: fct convexe, graphe
+approximation: weierstrass pour Poly -> C⁰, fourier, réel par rationnel, fct escalier, eq diff par son linéarisé...
+dvp asympt de somme f(k/n)
+éq diff implicité, éq suite
+choisir au hasard: enigme 2 nombres, algo 2 SAT, inégalité crossing number
+multiple 13 dont l'écriture décimale d'a que des 1 -> tout en un
+nombre max régions défini par k hyperplans
+induction structurelle
+nadia & vincent booléen
+dét de Gram
+Soit (a,b,c) \in \mathbb{C} tel que |a|=|b|=|c|=1 et a+b+c=1
+Montrer que l'un, au moins, de ces 3 complexes est égal à 1.
+
+
+Montrer qu'il existe une infinité de puissance de 2 qui commence par le chiffre 7. densité
+
+Allez, un facile: soit E un espace vectoriel réel de dimension finie n, f\in L(E), f^2=-Id_E. Montrer que n est pair.
+
+intégrale fonction impaire
+
+faire glisser une droite: ham sandwich
+
+Un exercice assez joli, pas totalement évident mais élémentaire :
+
+Soit E un ensemble de cardinal n et F un ensemble de parties de E avec |F| = 2^{n - 1} tel que pour tous A, B et C dans E, alors A \cap B \cap C est non vide. Montrer que l'intersection de tous les éléments de F est non vide.
+
+Une proposition de démo :
+
+En utilisant le fait que card E = 2^n et card F = 2^n-1 , on montre d'abord que pour toute partie A de E alors exclusivement A ou CA (complémentaire) est élément de F .
+
+on montre ensuite que F contient un singleton :
+Soit p le cardinal minimal des éléments de F , par l'absurde si p > 1 est le cardinal minimal d'un élément de F soit alors A = x1,..,xp un de ces éléments de F de cardinal p ( les xi sont différents 2 à 2)
+comme F contient toutes les parties de n - (p-1) éléments alors on peut facilement construire deux parties B = x1, y1,..., yq ( avec q = n- p et en choisissant les yi dans CA )
+et D = x2 , y1,...,yq
+clairement A inter B inter D = O (vide) ce qui contredit une des propriétés de F , donc p = 1
+Et enfin de p=1 on tire immédiatement que l'intersection des éléments de F est non vide ( ce singleton) 
+http://andrew-hoyer.com/
+
+Le 07/01/2016 16:37, Quentin Fortier a écrit :
+> http://geminis.dma.ulpgc.es/aplaza/ficheros/resolver/ficheros/crp/2root_2000.pdf
+> Le 06.01.2016 20:44, Quentin Fortier a écrit :
+>> https://hal.archives-ouvertes.fr/file/index/docid/509488/filename/aurelie-hal-2010-08-12.pdf
+>> http://perso.ens-lyon.fr/aurelie.lagoutte/data/uploads/floods-dam-revised-23aout2013.pdf
+>> nb comp connexe de R - union droites 
