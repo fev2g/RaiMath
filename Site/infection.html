@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <a id="step_button" class="myButton">step</a>
+    <a id="reset_button" class="myButton">reset</a>
+    <a id="run_button" class="myButton" onclick="setTimeout(myFunction, 3000)">run</a>
+<div id="grille" class="game">
+                    </div>
+    <script>        
+          var tailleCases = 60;
+          
+    var tailleTableau = 9;
+    var state = new Array(tailleTableau);
+for (var i = 0; i < tailleTableau; i++){
+  state[i] = new Array(20);
+    for(var j = 0; j < tailleTableau; j++)
+        state[i][j] = 'ok';
+}
+    
+function traceTableau() {
+               var prepgrille = "<table style='border: 1px solid black;'>";
+               for (var i=0; i<tailleTableau ; i++) {
+                    prepgrille = prepgrille+"<tr>";
+                    for (var j=0; j<tailleTableau ; j++) {
+                         prepgrille = prepgrille+"<td id=x" + i + "x" + j +" class='"+state[i][j]+"'></td>";
+                         }
+                    prepgrille = prepgrille+"</tr>";
+                    }
+                    prepgrille = prepgrille+"</table>";
+    $("#grille").html(prepgrille);
+               }
+traceTableau();
+
+function infected(x, y) {
+    if($("#x" + x + "x" + y).hasClass("nok")) return true;
+    return false;
+}
+function step(wait) {
+    var toModify = [];
+    $(".ok").each(function(){
+        var id = $(this).attr("id");
+        var coord = id.split("x");
+        var x = parseInt(coord[1]), y = parseInt(coord[2]), nInf = 0;
+        if(x > 0 && infected(x-1, y)) nInf++;
+        if(x < tailleTableau && infected(x+1, y)) nInf++;
+        if(y > 0 && infected(x, y-1)) nInf++;
+        if(y < tailleTableau && infected(x, y+1)) nInf++;
+        
+        if(nInf >= 2) toModify.push(id);
+});
+        for(var i = 0; i < toModify.length; i++)
+            $("#"+toModify[i]).delay(wait).toggleClass('nok ok');
+    return toModify.length;
+}
+$("td").click(function(){
+        $(this).toggleClass('nok ok');
+    });
+$("#step_button").click(step);
+$("#reset_button").click(function(){
+    $(".nok").each(function(){
+        $(this).toggleClass('nok ok');
+    });
+});
+$("#run_button").click(function(){ 
+    while(step() != 0); 
+        
+});
+</script>
+</body>
+</html>
